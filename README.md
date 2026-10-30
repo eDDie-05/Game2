@@ -1,95 +1,28 @@
-#  Number Guessing Game
-A simple **Number Guessing Game** built with Python. The computer randomly selects a number, and the player tries to guess it.
+# Number Guessing Game — Python
 
-##  Description
+A small command-line number guessing game. The program chooses a random integer from 1 to 100 and prompts the player to guess it.
 
-The game generates a random number within a specified range. The player enters guesses until they correctly identify the hidden number.
+## Features
+- Random number selection
+- Higher/lower feedback
+- Repeated guesses until the correct number is entered
 
-After each guess, the program tells the player whether the guess is:
+## Requirements
+- Python 3.9 or newer
+- No third-party packages
 
-*  Too high
-*  Too low
-*  Correct
-
-##  Technologies Used
-
-* Python 3
-* Python `random` module
-
-##  How to Play
-
-1. Run the Python program.
-2. The computer generates a random number.
-3. Enter your guess.
-4. Follow the hints:
-
-   * **Too high** → Try a smaller number.
-   * **Too low** → Try a larger number.
-   * **Correct** → You win!
-5. The game may also count the number of attempts.
-
-##  How to Run
-
-Make sure Python is installed on your computer.
-
-Open the terminal in the project folder and run:
-
+## Run locally
 ```bash
-python3 main.py
+python "Number guess.py"
 ```
 
-If your system uses `python` for Python 3, you can use:
+## How to play
+1. Start the program.
+2. Enter an integer between 1 and 100 when prompted.
+3. Read the higher/lower hint and try again until you guess correctly.
 
-```bash
-python main.py
-```
+## Project files
+- `Number guess.py` — command-line game
 
-##  Project Structure
-
-```text
-number-guessing-game/
-│
-├── main.py
-└── README.md
-```
-
-##  Example
-
-```text
- Welcome to the Number Guessing Game!
-
-Guess a number between 1 and 100: 50
- Too low!
-
-Guess a number between 1 and 100: 75
- Too high!
-
-Guess a number between 1 and 100: 63
- Correct! You won!
-You guessed the number in 3 attempts.
-```
-##  Features
-
-* Random number generation
-* User input
-* Guess validation
-* Helpful hints
-* Attempt counter
-* Simple command-line interface
-
-##  What I Learned
-
-This project helps practice:
-
-* Variables
-* User input with `input()`
-* Conditional statements (`if`, `elif`, `else`)
-* Loops
-* Functions
-* Random number generation
-* Basic Python programming logic
-
-## Author
-eDDie
-
-Created as a beginner Python programming project.
+## Current scope
+This is a beginner Python exercise. Input validation, attempt limits, replay support and automated tests are useful next improvements.
